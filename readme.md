@@ -15,10 +15,9 @@ To install the IPFS Cluster, follow these steps:
 
 1. Clone the repository:
   ```sh
-  ```sh
   git clone https://github.com/${GITHUB_USERNAME}/ipfs-cluster.git
   ```
-  ```
+  
 2. Navigate to the project directory:
   ```sh
   cd ipfs-cluster
