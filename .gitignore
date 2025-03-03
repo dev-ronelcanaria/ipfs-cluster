@@ -1,0 +1,5 @@
+.env.leader
+.env.node
+.env
+
+compose
