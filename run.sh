@@ -16,10 +16,10 @@ fi
 
 if [ "$1" == "leader" ]; then
   echo "Running Docker Compose leader setup..."
-  docker-compose --env-file .env up -d
+  docker compose -f docker-compose.leader.yml --env-file .env up -d
 elif [ "$1" == "node" ]; then
   echo "Running Docker Compose node setup..."
-  docker-compose --env-file .env up -d
+  docker compose -f docker-compose.node.yml --env-file .env up -d
 else
   echo -e "${RED}Usage: $0 {leader|node}${NC}"
   exit 1
