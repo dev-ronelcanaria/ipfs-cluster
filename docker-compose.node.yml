@@ -15,7 +15,7 @@ services:
     image: ipfs/ipfs-cluster:latest
     container_name: ${CLUSTER_NODE}
     ports:
-      - "9097:9094"  # REST API
+      - "9094:9094"  # REST API
       - "9096:9096"  # Cluster communication
     environment:
       CLUSTER_PEERNAME: ${CLUSTER_NODE}
